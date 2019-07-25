@@ -1,20 +1,13 @@
-<meta charset="utf-8" />
-  <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('assets/admin/img/apple-icon.png') }}">
-  <link rel="icon" type="image/png" href="{{ asset('assets/admin/img/favicon.png') }}">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <title>
-    Material Dashboard by Creative Tim
-  </title>
-  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
-  <!--     Fonts and icons     -->
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
-  <!-- CSS Files -->
-  <link href="{{ asset('assets/admin/css/material-dashboard.css?v=2.1.1') }}" rel="stylesheet" />
-  <!-- CSS Just for demo purpose, don't include it in your project -->
-  <link href="{{ asset('assets/admin/demo/demo.css') }}" rel="stylesheet" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+<link rel="shortcut icon" type="image/x-icon" href="{{ asset('public/assets/css/img/favicon.png') }}">
+<title> {{ $title }} -Job Portal</title>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="{{ asset('assets/admin/css/bootstrap.min.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('assets/admin/css/font-awesome.min.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('assets/admin/plugins/morris/morris.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('assets/admin/css/style.css') }}">
+@yield('styles')
 
-
-  <script src="{{ asset('assets/admin/js/core/jquery.min.js') }}"></script>
-  <script src="{{ asset('assets/admin/js/core/popper.min.js') }}"></script>
-  <script src="{{ asset('assets/admin/js/core/bootstrap-material-design.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('assets/admin/js/jquery-3.2.1.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('assets/admin/js/bootstrap.min.js') }}"></script>
