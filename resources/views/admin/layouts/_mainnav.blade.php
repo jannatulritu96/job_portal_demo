@@ -6,11 +6,11 @@
                 <a href="{{ route('dashboard') }}">Dashboard</a>
             </li>
             <li>
-                <a href="">Applicant</a>
+                <a href="{{ route('applicant.index') }}">Applicant</a>
             </li>
             <li>
-                <a href="{{ route('post.index') }}">Post</a>
+                <a href="{{ route('job_post.index') }}">Job Post</a>
             </li>
         </ul>
     </div>
-</div>
+</div> 

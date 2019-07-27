@@ -4,7 +4,7 @@
     <div class="row">
         <div class="col-sm-offset-3 col-sm-6">
             <div class="modal-body">
-                <form method="post" class="form-horizontal" action="{{ route('post.store') }}" enctype="multipart/form-data">
+                <form method="post" class="form-horizontal" action="{{ route('job_post.store') }}" >
                     @csrf
                     @include('admin.layouts._messages')
                     @include('admin.post._form')

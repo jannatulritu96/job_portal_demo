@@ -1,6 +1,6 @@
 <div class="header-left">
     <a href="{{ route('dashboard') }}" class="logo">
-        <img src="assets/img/logo.png" width="40" height="40" alt="">
+        <img src="assets/admin/img/logo.png" width="40" height="40" alt="">
     </a>
 </div>
 <div class="page-title-box pull-left">

@@ -2,13 +2,14 @@
 
 namespace App\Http\Controllers;
 use App\Post;
+
 use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
     public function index(Request $request)
     {
-        $data['title'] = 'Post us';
+        $data['title'] = 'Job Post';
         $posts= new Post();
         $render=[];
         $posts= $posts->paginate(10);
@@ -16,7 +17,6 @@ class PostController extends Controller
         $data['posts'] = $posts;
         return view('admin.post.index',$data);
     }
-
     public function create()
     {
         $data['title'] = 'Create post us form';
@@ -40,7 +40,7 @@ class PostController extends Controller
         $post->address= $request->address;
         $post->save();
         session()->flash('success','Information stored successfully');
-        return redirect()->route('post.index');
+        return redirect()->route('job_post.index');
     }
 
     
@@ -72,13 +72,13 @@ class PostController extends Controller
 
         $post->save();
         session()->flash('success','Information updated successfully');
-        return redirect()->route('post.index');
+        return redirect()->route('job_post.index');
     }
 
     public function destroy($id)
     {
         post::findOrFail($id)->delete();
         session()->flash('success','Slider deleted successfully');
-        return redirect()->route('post.index');
+        return redirect()->route('job_post.index');
     }
 }

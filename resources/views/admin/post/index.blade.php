@@ -6,7 +6,7 @@
             <h4 class="page-title">{{ $title }}</h4>
         </div>
         <div class="col-sm-4 text-right m-b-30">
-            <a href="{{ route('post.create') }}" class="btn btn-primary rounded"><i class="fa fa-plus"></i> Add New Post</a>
+            <a href="{{ route('job_post.create') }}" class="btn btn-primary rounded"><i class="fa fa-plus"></i> Add New Post</a>
         </div>
     </div>
 
@@ -42,9 +42,9 @@
                                 <div class="dropdown">
                                     <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
                                     <ul class="dropdown-menu pull-right">
-                                        <li><a href="{{ route('post.edit',$post->id) }}" title="Edit"><i class="fa fa-pencil m-r-5"></i> Edit</a></li>
+                                        <li><a href="{{ route('job_post.edit',$post->id) }}" title="Edit"><i class="fa fa-pencil m-r-5"></i> Edit</a></li>
                                         <li>
-                                            <form method="POST" class="form-horizontal" action="{{ route('post.destroy',$post->id) }}" enctype="multipart/form-data">
+                                            <form method="POST" class="form-horizontal" action="{{ route('job_post.destroy',$post->id) }}" enctype="multipart/form-data">
                                                 @csrf
                                                 <button type="submit" title="Delete" style="margin-left: 19px;"><i class="fa fa-trash-o m-r-5"></i> Delete</button>
                                             </form>

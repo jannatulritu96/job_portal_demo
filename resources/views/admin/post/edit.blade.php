@@ -3,9 +3,8 @@
     <div class="row">
         <div class="col-sm-offset-3 col-sm-6">
             <div class="modal-body">
-                    <form method="post" class="form-horizontal" action="{{ route('post.update',$post) }}" enctype="multipart/form-data">
+                    <form method="post" class="form-horizontal" action="{{ route('job_post.update',$post) }}" enctype="multipart/form-data">
                     @csrf
-{{--                        {{ method_field('PUT') }}--}}
                             @include('admin.layouts._messages')
 
                     <div class="panel-heading p-sm-4">
